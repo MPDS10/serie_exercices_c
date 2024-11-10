@@ -1,7 +1,6 @@
 
 /**
  * auteur : mame penda dieng sow
- * code permanent : SOWM65600301
  * programme : motzkin.c 
  *
  */
