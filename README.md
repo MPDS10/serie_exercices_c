@@ -1,4 +1,4 @@
-l'ensemble de ces differents codes ont pour but de :
+L'ensemble de ces differents codes ont pour but de :
 
 - s'initier au langage de programmation C;
 - consolider votre utilisation du logiciel de contrôle de versions Git lors
