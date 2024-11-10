@@ -1,9 +1,4 @@
-# Solution du travail pratique 1
 
-## Identification
-* nom : SOW
-* prenom: MAME PENDA DIENG
-* code permanent : SOWM65600301
  
 ## Vérifications et état du projet
 
