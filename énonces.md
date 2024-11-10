@@ -1,6 +1,6 @@
-# Questions
 
-## Question 1: Fonction factorielle (15 points)
+
+## Fonction factorielle 
 
 Proposez un programme C dont l'exécutable est nommé `factorial`, qui prend
 comme unique argument un nombre entier `N`, où `0 <= N <= 20` et qui affiche
@@ -41,25 +41,8 @@ error: the argument must be an integer between 0 and 20
 
 Les éléments suivants seront évalués dans cette question.
 
-a) (9 points) Le programme compile sans avertissement. Il s'exécute selon les
-contraintes décrites plus haut. L'affichage se fait sur le bon canal selon la
-situation (utilisation correcte ou erronées). Les bons codes d'erreur sont
-retournés.
 
-b) (2 point) Le code source du programme est soigné et lisible. Il est bien
-indenté, bien aéré, utilise des identifiants pertinents et est bien factorisé.
-Les fonctions sont documentées à l'aide de *docstrings* décrivant les
-paramètres d'entrée et les valeurs de retour.
-
-c) (2 points) Les *commits* faits pour résoudre cette question sont atomiques,
-avec des messages soignés et représentatifs des modifications apportées.
-
-d) (2 points) La description du fonctionnement du programme dans `solution.md`
-explique clairement comment compiler et exécuter le programme. Des exemples
-d'exécution sont fournis à l'appui autant pour les utilisations correctes que
-les utilisations erronées.
-
-## Question 2: Code mystérieux (15 points)
+## Code mystérieux 
 
 Considérez le fichier [`mystery.c`](mystery.c), qui contient le code source
 d'un programme écrit en C. Supposons qu'on le compile en un exécutable nommé
@@ -80,25 +63,7 @@ d'un programme écrit en C. Supposons qu'on le compile en un exécutable nommé
    besoin. Attention! le comportement du programme doit demeurer exactement le
    même qu'avant la réécriture du code.
 
-Les éléments suivants seront évalués dans cette question.
-
-a) (3 points) La description du comportement du programme est correcte, précise
-et complète.
-
-b) (5 points) Les tests proposés couvrent les principaux scénarios
-d'utilisation, autant correcte que erronée. Il y a peu de redondance entre les
-différents tests. Leur présentation est soignée.
-
-c) (5 points) La réécriture du programme respecte le comportement original. En
-particulier, il compile toujours sans erreur et sans avertissement. De plus, il
-est mieux structuré: avec une meilleure décomposition de la fonction
-principale, avec des identifiants mieux nommés. Le style du code est plus
-propre.
-
-d) (2 points) Les *commits* faits pour résoudre cette question sont atomiques,
-avec des messages soignés et représentatifs des modifications apportées.
-
-## Question 3: Résolution d'un mot caché (30 points)
+## Résolution d'un mot caché 
 
 Complétez le programme `hw.c` qui permet de résoudre un mot caché. Plus
 spécifiquement, votre programme doit lire sur `stdin` la grille de lettres,
@@ -166,28 +131,6 @@ suivantes:
   n'avez pas à valider la liste de mots, vous pouvez supposer qu'elle est
   toujours correcte.
 
-Les éléments suivants seront évalués dans cette question.
-
-a) (3 points) La documentation du fonctionnement du programme (comment le
-compiler, comment l'exécuter, avec des exemples d'utilisation) est claire et
-complète.
-
-b) (15 points) Le programme compile sans erreur et sans avertissement. Il a le
-comportement attendu sur des grilles carrées d'ordre entre 1 et 12.
-
-c) (8 points) Le style du programme est soigné. Le code est bien indenté et
-bien aéré, les identifiants sont bien choisis. La solution est bien divisée en
-petites fonctions, qui effectuent un traitement spécifique. Toutes les
-fonctions sont documentées avec une *docstring* expliquant les paramètres et
-les valeurs de retour. Le code contient peu ou pas de valeurs magiques.
-
-d) (4 points) Les *commits* faits pour résoudre cette question sont atomiques,
-avec des messages soignés et représentatifs des modifications apportées.
-
-**Suggestion**. Bien que ce ne soit pas obligatoire, une solution possible
-repose sur les déclarations suivantes, que vous pouvez utiliser et modifier
-à votre guise:
-
 ```c
 // The maximum order of the grid
 #define MAX_ORDER 12
@@ -203,7 +146,7 @@ struct Grid {
 };
 ```
 
-## Question 4: Dessiner des chemins de Motzkin en SVG (40 points)
+## Dessiner des chemins de Motzkin en SVG 
 
 En combinatoire, un *chemin de Motzkin* est un chemin de longueur `n` qu'on
 peut tracer sur une grille et qui respecte les contraintes suivantes:
@@ -294,33 +237,6 @@ DESCRIPTION
       d or D for a (1,-1) step
 ```
 
-Les éléments suivants seront évalués dans cette question.
-
-a) (5 points) La documentation du fonctionnement du programme (comment le
-compiler, comment l'exécuter, avec des exemples d'utilisation) est claire et
-complète.
-
-b) (20 points) Le programme compile sans erreur et sans avertissement. Il a le
-comportement attendu autant dans les cas d'utilisation correcte que lorsqu'il y
-a des erreurs.
-
-c) (10 points) Le style du programme est soigné. Le code est bien indenté et
-bien aéré, les identifiants sont bien choisis. La solution est bien divisée en
-petites fonctions, qui effectuent un traitement spécifique. Toutes les
-fonctions sont documentées avec une *docstring* expliquant les paramètres et
-les valeurs de retour. Le code contient peu ou pas de valeurs magiques.
-
-d) (5 points) Les *commits* faits pour résoudre cette question sont atomiques,
-avec des messages soignés et représentatifs des modifications apportées.
-
-**Suggestion**. Bien que ce ne soit pas obligatoire, une solution possible
-repose sur les déclarations suivantes, que vous pouvez utiliser et modifier
-à votre guise:
-
-```c
-// The usage string
-#define USAGE "NAME\n\
-    %s - draw a Motzkin path\n\
 \n\
 SYNOPSIS\n\
     %s STEPS\n\
